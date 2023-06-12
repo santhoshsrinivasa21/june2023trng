@@ -1,20 +1,8 @@
-class B{
-A obj;
-B(A obj){
-this.obj=obj;
-}
-void display(){
-System.out.println(obj.data);//using data member of A  class
-}
-}
-class A
+class A{
+public static void main(String args[])
 {
-int data=10;
-A(){
-B b=new B(this);//B b=new b();
-b.display();
-}
-public static void main(String args[]){
-A a=new A();
+System.out.println("Your first argument is:"+args[0]);
+System.out.println("Your first argument is:"+args[1]);
+System.out.println("Your first argument is:"+args[2]);
 }
 }
